@@ -2,13 +2,27 @@
 <!--  TODO: anotar obrigatoriedade dos campos de propriedade -->
 <events>
 	<event type="DsoaEvent">
-		<properties>
-			<property id="id" type="java.lang.String" />
+		<metadata>
+			<property id="id" type="java.lang.String" optional="false"/>
+			<property id="source" type="java.lang.String" optional="true"/>
 			<property id="timestamp" type="java.lang.Double" />
-		</properties>
+		</metadata>
 	</event>
 	
-	<event type="Request" extends="DsoaEvent"/>
+	<event type="InvocationEvent" extends="DsoaEvent">
+		<data>
+			<property id="requestTimestamp" 	type="java.lang.Long" />
+			<property id="responseTimestamp" 	type="java.lang.Long" />
+		</data>
+	</event>
+	
+	<event type="AvgResponseTimeEvent" extends="DsoaEvent">
+		<data>
+			<property id="value" type="java.lang.Double" />
+		</data>
+	</event>
+	
+	<!-- <event type="Request" extends="DsoaEvent"/>
 	
 	<event type="Response" extends="DsoaEvent"/>
 	
@@ -17,17 +31,26 @@
 			<property id="request" type="Request" />
 			<property id="response" type="Response" />
 		</properties>
-	</event>
+	</event> -->
 	
-	<event type="ResponseTimeEvent" extends="DsoaEvent">
+<!-- 	
+	<event type="DsoaEvent">
 		<properties>
-			<property id="responseTime" type="java.lang.Double" />
+			<property id="id" type="java.lang.String" />
+			<property id="timestamp" type="java.lang.Double" />
 		</properties>
 	</event>
 
-	<event type="AvailabiltyEvent" extends="DsoaEvent">
+
+<event type="ResponseTime" extends="DsoaEvent">
 		<properties>
-			<property id="availability" type="java.lang.Double" />
+			<property id="value" type="java.lang.Double" />
+		</properties>
+	</event>
+
+	<event type="Availabilty" extends="DsoaEvent">
+		<properties>
+			<property id="value" type="java.lang.Double" />
 		</properties>
 	</event>
 
@@ -36,5 +59,5 @@
 			<property id="group" type="java.lang.String" />
 			<property id="user" type="java.lang.String" />
 		</properties>
-	</event>
+	</event> -->
 </events>
