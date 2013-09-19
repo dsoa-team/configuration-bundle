@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!--  TODO: anotar obrigatoriedade dos campos de propriedade -->
 <events>
-	<event type="DsoaEvent">
-		<metadata>
-			<property id="id" type="java.lang.String" optional="false"/>
-			<property id="source" type="java.lang.String" optional="true"/>
-			<property id="timestamp" type="java.lang.Double" />
-		</metadata>
-	</event>
-	
-	<event type="InvocationEvent" extends="DsoaEvent">
-		<data>
-			<property id="requestTimestamp" 	type="java.lang.Long" />
-			<property id="responseTimestamp" 	type="java.lang.Long" />
-		</data>
-	</event>
-	
 	<event type="AvgResponseTimeEvent" extends="DsoaEvent">
 		<data>
 			<property id="value" type="java.lang.Double" />
