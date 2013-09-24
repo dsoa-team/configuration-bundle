@@ -2,7 +2,7 @@
 <attributes>
 
 	<attribute>
-		<category>qos.performance.responseTime</category>
+		<category>qos</category>
 		<name>AvgResponseTime</name>
 		<description>Average response time</description>
 		<metadata>
@@ -15,7 +15,7 @@
 	</attribute>
 	
 	<attribute>
-		<category>qos.performance.responseTime</category>
+		<category>qos</category>
 		<name>MinResponseTime</name>
 		<description>Minimum response time</description>
 		<metadata>
