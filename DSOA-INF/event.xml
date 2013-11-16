@@ -3,7 +3,7 @@
 <events>
 	<event type="AvgResponseTimeEvent" extends="DsoaEvent">
 		<data>
-			<property id="value" type="java.lang.Object" />
+			<property id="value" type="java.lang.Double" />
 		</data>
 	</event>
 	
