@@ -43,10 +43,7 @@
 		</mapping>
 	</agent>
 	
-	String address, Stock stock, double lowerThreshold,
-			double higherThreshold
-	
-	<agent id="IntrospectSampleAgent">
+	<!-- <agent id="IntrospectSampleAgent">
 		<description></description>
 		<query id="IntrospectSampleQuery">
 			<command>
@@ -65,7 +62,7 @@
 				 FROM InvocationEvent as event
 			</command>
 		</query>
-	</agent>
+	</agent> -->
 	
 	<!-- <agent id="MinResponseTimeAgent">
 		<description>Calculates min response time attribute</description>
