@@ -7,6 +7,11 @@
 		</data>
 	</event>
 	
+	<event type="AvgResponseTimeFakeEvent" extends="DsoaEvent">
+		<data>
+			<property id="value" type="java.lang.Double" />
+		</data>
+	</event>
 	<event type="RequestOutOfScheduleEvent" extends="DsoaEvent">
 		<data>
 			<property id="value" type="java.lang.Double" />
