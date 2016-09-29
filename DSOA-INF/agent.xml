@@ -19,7 +19,107 @@
 			</output-event>
 		</mapping>
 	</agent>
-
+	
+	<agent id="AvgResponseTimeAgent20">
+		<description>Calculates avg response time attribute</description>
+		<mapping id="AvgResponseTimeMapping20">
+			<input-event type="InvocationEvent" alias="event">
+				<window type="length" size="20" unit=""/>
+			</input-event>
+			<output-event type="AvgResponseTimeEvent20">
+				<metadata>
+					<property id="id" expression="event.metadata.id" />
+					<property id="timestamp" expression="event.metadata.timestamp" />
+					<property id="source" expression="event.metadata.source" />
+				</metadata>
+				<data>
+					<property id="value" type="java.lang.Double"
+						expression="avg(event.data.responseTimestamp - event.data.requestTimestamp)" />
+				</data>
+			</output-event>
+		</mapping>
+	</agent>
+	
+	<agent id="AvgResponseTimeAgent30">
+		<description>Calculates avg response time attribute</description>
+		<mapping id="AvgResponseTimeMapping30">
+			<input-event type="InvocationEvent" alias="event">
+				<window type="length" size="30" unit=""/>
+			</input-event>
+			<output-event type="AvgResponseTimeEvent30">
+				<metadata>
+					<property id="id" expression="event.metadata.id" />
+					<property id="timestamp" expression="event.metadata.timestamp" />
+					<property id="source" expression="event.metadata.source" />
+				</metadata>
+				<data>
+					<property id="value" type="java.lang.Double"
+						expression="avg(event.data.responseTimestamp - event.data.requestTimestamp)" />
+				</data>
+			</output-event>
+		</mapping>
+	</agent>
+	
+	<agent id="AvgResponseTimeAgent40">
+		<description>Calculates avg response time attribute</description>
+		<mapping id="AvgResponseTimeMapping40">
+			<input-event type="InvocationEvent" alias="event">
+				<window type="length" size="40" unit=""/>
+			</input-event>
+			<output-event type="AvgResponseTimeEvent40">
+				<metadata>
+					<property id="id" expression="event.metadata.id" />
+					<property id="timestamp" expression="event.metadata.timestamp" />
+					<property id="source" expression="event.metadata.source" />
+				</metadata>
+				<data>
+					<property id="value" type="java.lang.Double"
+						expression="avg(event.data.responseTimestamp - event.data.requestTimestamp)" />
+				</data>
+			</output-event>
+		</mapping>
+	</agent>
+	
+	<agent id="AvgResponseTimeAgent50">
+		<description>Calculates avg response time attribute</description>
+		<mapping id="AvgResponseTimeMapping50">
+			<input-event type="InvocationEvent" alias="event">
+				<window type="length" size="50" unit=""/>
+			</input-event>
+			<output-event type="AvgResponseTimeEvent50">
+				<metadata>
+					<property id="id" expression="event.metadata.id" />
+					<property id="timestamp" expression="event.metadata.timestamp" />
+					<property id="source" expression="event.metadata.source" />
+				</metadata>
+				<data>
+					<property id="value" type="java.lang.Double"
+						expression="avg(event.data.responseTimestamp - event.data.requestTimestamp)" />
+				</data>
+			</output-event>
+		</mapping>
+	</agent>
+	
+	<agent id="AvgResponseTimeAgent100">
+		<description>Calculates avg response time attribute</description>
+		<mapping id="AvgResponseTimeMapping100">
+			<input-event type="InvocationEvent" alias="event">
+				<window type="length" size="100" unit=""/>
+			</input-event>
+			<output-event type="AvgResponseTimeEvent50">
+				<metadata>
+					<property id="id" expression="event.metadata.id" />
+					<property id="timestamp" expression="event.metadata.timestamp" />
+					<property id="source" expression="event.metadata.source" />
+				</metadata>
+				<data>
+					<property id="value" type="java.lang.Double"
+						expression="avg(event.data.responseTimestamp - event.data.requestTimestamp)" />
+				</data>
+			</output-event>
+		</mapping>
+	</agent>
+	<!-- 
 	<agent id="OutOfServiceAgent">
 		<description>OutOfServiceAgent identifies request made out of predefined times</description>
 		<mapping id="OutOfServiceAgentMapping">
@@ -43,7 +143,7 @@
 		</mapping>
 	</agent>
 	
-	<!-- <agent id="IntrospectSampleAgent">
+<agent id="IntrospectSampleAgent">
 		<description></description>
 		<query id="IntrospectSampleQuery">
 			<command>

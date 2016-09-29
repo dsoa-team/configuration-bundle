@@ -17,6 +17,70 @@
 	
 	<attribute-event-mapper 
 		attribute-category="qos"
+		attribute-name="AvgResponseTime20"  
+		event-type="AvgResponseTimeEvent20" 
+		event-alias="event">
+
+		<metadata>
+			<property id="source" expression="event.metadata.source" />
+			<property id="timestamp" expression="event.metadata.timestamp" />
+		</metadata>
+		<data>
+			<property id="value" expression="event.data.value" />
+		</data>
+		
+	</attribute-event-mapper>
+	
+	<attribute-event-mapper 
+		attribute-category="qos"
+		attribute-name="AvgResponseTime30"  
+		event-type="AvgResponseTimeEvent30" 
+		event-alias="event">
+
+		<metadata>
+			<property id="source" expression="event.metadata.source" />
+			<property id="timestamp" expression="event.metadata.timestamp" />
+		</metadata>
+		<data>
+			<property id="value" expression="event.data.value" />
+		</data>
+		
+	</attribute-event-mapper>
+	
+	<attribute-event-mapper 
+		attribute-category="qos"
+		attribute-name="AvgResponseTime40"  
+		event-type="AvgResponseTimeEvent40" 
+		event-alias="event">
+
+		<metadata>
+			<property id="source" expression="event.metadata.source" />
+			<property id="timestamp" expression="event.metadata.timestamp" />
+		</metadata>
+		<data>
+			<property id="value" expression="event.data.value" />
+		</data>
+		
+	</attribute-event-mapper>
+	
+	<attribute-event-mapper 
+		attribute-category="qos"
+		attribute-name="AvgResponseTime50"  
+		event-type="AvgResponseTimeEvent50" 
+		event-alias="event">
+
+		<metadata>
+			<property id="source" expression="event.metadata.source" />
+			<property id="timestamp" expression="event.metadata.timestamp" />
+		</metadata>
+		<data>
+			<property id="value" expression="event.data.value" />
+		</data>
+		
+	</attribute-event-mapper>
+	
+	<attribute-event-mapper 
+		attribute-category="qos"
 		attribute-name="BusinessException"  
 		event-type="RequestOutOfScheduleEvent" 
 		event-alias="event">

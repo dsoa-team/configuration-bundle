@@ -7,13 +7,37 @@
 		</data>
 	</event>
 	
+		<event type="AvgResponseTimeEvent20" extends="DsoaEvent">
+		<data>
+			<property id="value" type="java.lang.Double" />
+		</data>
+	</event>
+	
+		<event type="AvgResponseTimeEvent30" extends="DsoaEvent">
+		<data>
+			<property id="value" type="java.lang.Double" />
+		</data>
+	</event>
+	
+		<event type="AvgResponseTimeEvent40" extends="DsoaEvent">
+		<data>
+			<property id="value" type="java.lang.Double" />
+		</data>
+	</event>
+	
+		<event type="AvgResponseTimeEvent50" extends="DsoaEvent">
+		<data>
+			<property id="value" type="java.lang.Double" />
+		</data>
+	</event>
+	
 	<event type="RequestOutOfScheduleEvent" extends="DsoaEvent">
 		<data>
 			<property id="value" type="java.lang.Double" />
 		</data>
 	</event>
 	
-	<event type="IntrospectSampleEvent" extends="DsoaEvent">
+<!-- 	<event type="IntrospectSampleEvent" extends="DsoaEvent">
 		<data>
 			<property id="address" type="java.lang.Object" />
 			<property id="stock" type="java.lang.Object" />
@@ -22,7 +46,7 @@
 			<property id="type" type="java.lang.Object" />
 			<property id="price" type="java.lang.Object" />
 		</data>
-	</event>
+	</event> -->
 	
 	<!-- <event type="Request" extends="DsoaEvent"/>
 	
